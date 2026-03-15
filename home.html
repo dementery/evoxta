@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evoxta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: '#0a0a0f',
+            panel: '#111827',
+            panelSoft: '#1f2937',
+            accent: '#8b5cf6',
+            accentSoft: '#22d3ee'
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(139, 92, 246, 0.2), 0 20px 60px rgba(0, 0, 0, 0.45)'
+          },
+          backgroundImage: {
+            grid: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+</head>
+<body class="bg-base text-white antialiased selection:bg-accent/30 scroll-smooth">
+  <div class="fixed inset-0 -z-20 bg-base"></div>
+  <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.16),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.12),transparent_20%)]"></div>
+  <div class="fixed inset-0 -z-10 bg-grid bg-[size:36px_36px] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.7),transparent)]"></div>
+  <main id="home">
+    <section class="mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-20 lg:px-8">
+      <div>
+        <p class="mb-4 inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-1 text-sm text-accentSoft">
+          front-end web developer
+        </p>
+        <h1 class="max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          developing and maintaining modern websites with
+          <span class="bg-gradient-to-r from-accent to-accentSoft bg-clip-text text-transparent">WordPress</span>
+          and
+          <span class="bg-gradient-to-r from-accent to-accentSoft bg-clip-text text-transparent">Laravel</span>
+
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+          I build beautiful, responsive and modern webistes and digital portfolios with development platforms like WordPress and Laravel, to make future editing easier, and plain-old code like HTML/PHP, CSS and JS.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <button data-scroll-target="#projects" class="scroll-btn rounded-full bg-accent px-6 py-3 font-medium text-white transition hover:scale-[1.02] hover:bg-violet-500">View Projects</button>
+          <button data-scroll-target="#contact" class="scroll-btn rounded-full border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:border-white/30 hover:bg-white/10">Get In Touch</button>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-glow">
+            <p class="text-2xl font-semibold">20+</p>
+            <p class="mt-1 text-sm text-slate-400">websites developed</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-glow">
+            <p class="text-2xl font-semibold">26</p>
+            <p class="mt-1 text-sm text-slate-400">satisfied customers</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-glow">
+            <p class="text-2xl font-semibold">411</p>
+            <p class="mt-1 text-sm text-slate-400">support tickets resolved in under 1hr</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <p class="mb-3 text-sm uppercase tracking-[0.25em] text-accentSoft">About Me</p>
+          <h2 class="text-3xl font-semibold text-white">Websites made to perfection.</h2>
+          <p class="mt-5 max-w-3xl leading-8 text-slate-300">
+            From the initial mockups to the final production-ready site, I work with customers along the entire design process to ensure that your website is made exactly to your specification. I focus on the smallest details to ensure that customers are 100% satisfied with the final product.
+          </p>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <p class="text-sm uppercase tracking-[0.25em] text-accentSoft">What I Value</p>
+          <ul class="mt-5 space-y-4 text-slate-300">
+            <li class="rounded-2xl border border-white/10 bg-black/20 p-4">Resoponsive design that works and looks well on all devices</li>
+            <li class="rounded-2xl border border-white/10 bg-black/20 p-4">Easy to maintain and edit your site in the future</li>
+            <li class="rounded-2xl border border-white/10 bg-black/20 p-4">The customer is 100% happy and satisfied with their website!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="mb-10 flex items-end justify-between gap-6">
+        <div>
+          <p class="mb-3 text-sm uppercase tracking-[0.25em] text-accentSoft">Skills</p>
+          <h2 class="text-3xl font-semibold text-white">Tools and technologies I work with</h2>
+        </div>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/30">
+          <h3 class="text-xl font-semibold">WordPress</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-400">Customising sites, working with themes, content structures, and practical business websites.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/30">
+          <h3 class="text-xl font-semibold">Laravel</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-400">Building structured PHP applications with cleaner routing, logic, and maintainable back-end foundations.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/30">
+          <h3 class="text-xl font-semibold">HTML, CSS & JS</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-400">Creating fast, responsive front ends with solid markup, styling, and interactive behaviour.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/30">
+          <h3 class="text-xl font-semibold">PHP & App Dev</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-400">Comfortable with core PHP and currently expanding into app development and broader product building.</p>
+        </article>
+      </div>
+    </section>
+    <section id="projects" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="mb-10">
+        <p class="mb-3 text-sm uppercase tracking-[0.25em] text-accentSoft">Projects</p>
+        <h2 class="text-3xl font-semibold text-white">Selected work</h2>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-3">
+                    <p class="mt-3 text-sm leading-7 text-slate-400">Coming soon...</p>
+<!--
+        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+          <img src="balls" alt="project" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">project</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">description of it</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 1</span>
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 2</span>
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 3</span>
+            </div>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+          <img src="balls" alt="project" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">project</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">description of it</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 1</span>
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 2</span>
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 3</span>
+            </div>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+          <img src="balls" alt="project" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">project</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">description of it</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 1</span>
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 2</span>
+              <span class="rounded-full bg-white/5 px-3 py-1">thing 3</span>
+            </div>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+    <section id="contact" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <p class="mb-3 text-sm uppercase tracking-[0.25em] text-accentSoft">Contact</p>
+          <h2 class="text-3xl font-semibold text-white">Let’s build something solid.</h2>
+          <p class="mt-5 leading-8 text-slate-300">
+            Need a dark, modern website or a cleaner online presence? I’m available for freelance-style web projects, redesigns, and custom builds.
+          </p>
+          <div class="mt-6 space-y-3 text-slate-300">
+            <p>Email: hello@yourportfolio.dev</p>
+            <p>Location: United Kingdom</p>
+          </div>
+        </div>
+        <form class="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="name" class="mb-2 block text-sm text-slate-300">Name</label>
+              <input id="name" type="text" placeholder="Your name" class="w-full rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-accent/50" />
+            </div>
+            <div>
+              <label for="email" class="mb-2 block text-sm text-slate-300">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" class="w-full rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-accent/50" />
+            </div>
+          </div>
+          <div class="mt-5">
+            <label for="message" class="mb-2 block text-sm text-slate-300">Message</label>
+            <textarea id="message" rows="6" placeholder="Tell me about your project..." class="w-full rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-accent/50"></textarea>
+          </div>
+          <button type="submit" class="mt-5 rounded-full bg-accent px-6 py-3 font-medium text-white transition hover:bg-violet-500">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 md:flex-row md:items-center md:justify-between lg:px-8">
+      <p>© 2026 Your Name. All rights reserved.</p>
+      <div class="flex gap-5">
+        <a href="#" class="transition hover:text-white">GitHub</a>
+        <a href="#" class="transition hover:text-white">LinkedIn</a>
+        <a href="#" class="transition hover:text-white">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.scroll-btn').forEach((button) => {
+      button.addEventListener('click', () => {
+        const targetSelector = button.getAttribute('data-scroll-target');
+        const target = document.querySelector(targetSelector);
+
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+  <script src="/assets/js/main.js"></script>
+  <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
+<call-us-selector phonesystem-url="https://1317.3cx.cloud" party="LiveChat62832"></call-us-selector>
+ 
+<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
+<!--<call-us 
+phonesystem-url="https://1317.3cx.cloud" 
+style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;right: 20px; bottom: 20px;" 
+id="wp-live-chat-by-3CX" 
+minimized="true" 
+animation-style="fadein" 
+party="LiveChat62832" 
+minimized-style="bubbleright" 
+allow-call="true" 
+allow-video="false" 
+allow-soundnotifications="true" 
+enable-mute="true" 
+enable-onmobile="true" 
+offline-enabled="true" 
+enable="true" 
+ignore-queueownership="false" 
+authentication="both" 
+show-operator-actual-name="true" 
+aknowledge-received="true" 
+gdpr-enabled="false" 
+message-userinfo-format="both" 
+message-dateformat="both" 
+lang="en" 
+button-icon-type="default" 
+invite-message="Please use the &#039;Call us&#039; feature to receive a response. We do not check live chat." 
+authentication-message="Please use the &#039;Call us&#039; feature to receive a response. We do not check live chat." 
+unavailable-message="Please use the &#039;Call us&#039; feature to receive a response. We do not check live chat." 
+first-response-message="Please use the &#039;Call us&#039; feature to receive a response. We do not check live chat." 
+greeting-visibility="none" 
+greeting-offline-visibility="none" 
+chat-delay="2000" 
+enable-direct-call="true" 
+enable-ga="false" 
+></call-us>--> 
+<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+</body>
+</html>
